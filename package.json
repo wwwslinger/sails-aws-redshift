@@ -1,18 +1,21 @@
 {
-  "name": "sails-postgresql",
-  "description": "a postgreSQL adapter for Waterline and Sails.js",
-  "version": "0.10.15",
-  "author": "Cody Stoltman <particlebanana@gmail.com>",
-  "url": "http://github.com/balderdashy/sails-postgresql",
+  "name": "sails-aws-redshift",
+  "description": "an Amazon Redshift adapter for Waterline and Sails.js based on sails-postgresql",
+  "version": "0.0.1",
+  "author": {
+    "name": "Jason McInerney",
+    "email": "wwwslinger@gmail.com"
+  },
+  "url": "http://github.com/wwwslinger/sails-aws-redshift",
   "keywords": [
-    "postgresql",
+    "redshift",
     "orm",
     "waterline",
     "sails"
   ],
   "repository": {
     "type": "git",
-    "url": "git://github.com/balderdashy/sails-postgresql.git"
+    "url": "git://github.com/wwwslinger/sails-aws-redshift.git"
   },
   "dependencies": {
     "pg": "~4.2.0",
@@ -36,7 +39,9 @@
     "lib": "./lib"
   },
   "license": "MIT",
-  "bugs": "https://github.com/balderdashy/sails-postgresql/issues",
+  "bugs": {
+    "url": "https://github.com/wwwslinger/sails-aws-redshift/issues"
+  },
   "waterlineAdapter": {
     "waterlineVersion": "~0.10.0",
     "interfaces": [
@@ -49,5 +54,27 @@
     "features": [
       "cross-adapter"
     ]
-  }
+  },
+  "gitHead": "",
+  "homepage": "https://github.com/balderdashy/sails-postgresql",
+  "_id": "",
+  "_shasum": "",
+  "_from": "",
+  "_npmVersion": "",
+  "_npmUser": {
+    "name": "wwwslinger",
+    "email": "wwwslinger@gmail.com"
+  },
+  "maintainers": [
+    {
+      "name": "wwwslinger",
+      "email": "wwwslinger@gmail.com"
+    }
+  ],
+  "dist": {
+    "shasum": "",
+    "tarball": ""
+  },
+  "_resolved": "",
+  "readme": ""
 }
