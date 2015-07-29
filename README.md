@@ -2,7 +2,7 @@
 
 # Amazon (AWS) Redshift Sails/Waterline Adapter
 
-[![Build Status](https://travis-ci.org/wwwslinger/sails-aws-redshift.png?branch=master)](https://travis-ci.org/wwwslinger/sails-aws-redshift) [![NPM version](https://badge.fury.io/js/sails-aws-redshift.png)](http://badge.fury.io/js/sails-aws-redshift) [![Dependency Status](https://gemnasium.com/wwwslinger/sails-aws-redshift.png)](https://gemnasium.com/wwwslinger/sails-aws-redshift)
+[![NPM version](https://img.shields.io/npm/v/sails-aws-redshift.svg)](https://www.npmjs.org/package/sails-aws-redshift) [![Dependency Status](https://david-dm.org/wwwslinger/sails-aws-redshift.png)](https://david-dm.org/wwwslinger/sails-aws-redshift)  ![MIT License](http://img.shields.io/badge/license-MIT-green.svg)
 
 A [Waterline](https://github.com/balderdashy/waterline) adapter for [Amazon Redshift](http://aws.amazon.com/redshift/). May be used in a [Sails](https://github.com/balderdashy/sails) app or anything using Waterline for the ORM.
 
