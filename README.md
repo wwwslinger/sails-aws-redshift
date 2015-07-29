@@ -1,62 +1,33 @@
 ![image_squidhome@2x.png](http://i.imgur.com/RIvu9.png)
 
-# PostgreSQL Sails/Waterline Adapter
+# Amazon (AWS) Redshift Sails/Waterline Adapter
 
-[![Build Status](https://travis-ci.org/balderdashy/sails-postgresql.png?branch=master)](https://travis-ci.org/balderdashy/sails-postgresql) [![NPM version](https://badge.fury.io/js/sails-postgresql.png)](http://badge.fury.io/js/sails-postgresql) [![Dependency Status](https://gemnasium.com/balderdashy/sails-postgresql.png)](https://gemnasium.com/balderdashy/sails-postgresql)
+[![Build Status](https://travis-ci.org/wwwslinger/sails-aws-redshift.png?branch=master)](https://travis-ci.org/wwwslinger/sails-aws-redshift) [![NPM version](https://badge.fury.io/js/sails-aws-redshift.png)](http://badge.fury.io/js/sails-aws-redshift) [![Dependency Status](https://gemnasium.com/wwwslinger/sails-aws-redshift.png)](https://gemnasium.com/wwwslinger/sails-aws-redshift)
 
-A [Waterline](https://github.com/balderdashy/waterline) adapter for PostgreSQL. May be used in a [Sails](https://github.com/balderdashy/sails) app or anything using Waterline for the ORM.
+A [Waterline](https://github.com/balderdashy/waterline) adapter for [Amazon Redshift](http://aws.amazon.com/redshift/). May be used in a [Sails](https://github.com/balderdashy/sails) app or anything using Waterline for the ORM.
 
 ## Install
 
 Install is through NPM.
 
 ```bash
-$ npm install sails-postgresql
+$ npm install sails-aws-redshift
 ```
 
 ## Configuration
 
 The following config options are available along with their default values:
 
-```javascript
-config: {
-  database: 'databaseName',
-  host: 'localhost',
-  user: 'root',
-  password: '',
-  port: 5432,
-  pool: false,
-  ssl: false
+```javascript  
+config: {  
+  database: 'databaseName',  
+  host: 'some.cluster.name.us-east-1.redshift.amazonaws.com',  
+  user: 'userName',  
+  password: 'userPassword',  
+  port: 5439,  
+  pool: false,  
+  ssl: false  
 };
-```
-Alternatively, you can supply the connection information in URL format:
-```javascript
-config: {
-  url: 'postgres://username:password@hostname:port/database',
-  pool: false,
-  ssl: false
-};
-```
-
-We are also testing features for future versions of waterline in postgresql. One of these is case sensitive string searching. In order to enable this feature today you can add the following config flag:
-
-```javascript
-postgresql: {
-  url: 'postgres://username:password@hostname:port/database',
-  wlNext: {
-    caseSensitive: true
-  }
-}
-```
-
-## Testing
-
-Test are written with mocha. Integration tests are handled by the [waterline-adapter-tests](https://github.com/balderdashy/waterline-adapter-tests) project, which tests adapter methods against the latest Waterline API.
-
-To run tests:
-
-```bash
-$ npm test
 ```
 
 ## About Waterline
