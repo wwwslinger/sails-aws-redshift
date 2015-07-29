@@ -1,7 +1,7 @@
 {
   "name": "sails-aws-redshift",
   "description": "an Amazon Redshift adapter for Waterline and Sails.js based on sails-postgresql",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "author": {
     "name": "Jason McInerney",
     "email": "wwwslinger@gmail.com"
