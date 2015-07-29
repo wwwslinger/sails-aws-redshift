@@ -16,7 +16,7 @@ $ npm install sails-aws-redshift
 
 ## Configuration
 
-The following config options are available along with their default values:
+The following config options are available, with example entries:
 
 ```javascript  
 config: {  
