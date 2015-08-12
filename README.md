@@ -38,7 +38,7 @@ config: {
 Redshift originally branched from PostgreSQL, but differs quite a bit now.  This adapter version has the following restrictions:  
     1. Redshift is not case-sensitive, so any case sensitivity available with PostreSQL has been removed.  
     2. Redshift does not provide returning statements, so aspects of waterline-sequel which expect this are not available or have been overridden.  
-    3. Much syntax in SQL is not supported in Redshift, for example selecting from table names using "AS <identifier>" in the situation where the real table name is not being used at the identifier.  
+    3. Much syntax in SQL is not supported in Redshift, for example, selecting from table names using "AS <identifier>" in the situation where the real table name is not being used as the identifier.  
     4. Auto-increment is different and currently results in even-numbered primary keys when using this feature.  
     5. Redshift does not support specifying the primary key/id upon creation, so it is good practice to include a separate identifier like a UUID for all models.  
     6. Since returning from a query is not avaialable, the `create` and `update` adapter methods run a subsequent `adapter.find` to get the new/updated object. The create requires that the query appends createdAt and updatedAt values.
